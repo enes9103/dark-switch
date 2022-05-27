@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --clr-bcg: #fff;         /*https://www.w3schools.com/cssref/func_var.asp*/
+  --clr-font: #282C35;
+  --clr-primary: #D23669;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-theme{
+  --clr-bcg: #282C35;
+  --clr-font: #fff;
+  --clr-primary: #D23669;
+}
+.ligth-theme{
+  --clr-bcg: #fff;
+  --clr-font: #282C35;
+  --clr-primary: #D23669;
+}
+*,::after,::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--clr-font);
+  background-color: var(  --clr-bcg);
+  transition: all 0.3 linear;
+}
+
+.nav-center{
+  width: 90vw;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.btn{
+  padding: 0.25rem 0.5rem;
+  color: var(--clr-font);
+  background: var(--clr-bcg);
+  border-radius: 5px;
+  border-color: transparent;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  
+}
+
+.card-toggle{
+  color: var(--clr-font);
+  background: var(--clr-bcg);
+}
+
+.footer{
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
 }
